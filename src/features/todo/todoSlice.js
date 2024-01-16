@@ -23,7 +23,8 @@ export const todoSlice = createSlice({
         },
     }
 })
-//separately exporting for use when required
+//all the functions that are defined inside the reducer is called actions
+//separately exporting for using when required addTodo or RemoveTodo
 export const {addTodo, removeTodo} = todoSlice.actions 
 //export whole reducer object
 export default todoSlice.reducer
